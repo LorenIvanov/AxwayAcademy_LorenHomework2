@@ -79,8 +79,10 @@ public class UsingJDBC {
 	}
 
 	/**
+	 * Inserts data into MySQL database
 	 * 
 	 * @throws SQLException
+	 * @throws Exception
 	 */
 	protected void createStatements() throws SQLException, Exception {
 		String name = null;
@@ -155,7 +157,7 @@ public class UsingJDBC {
 	}
 
 	/**
-	 * Show table values
+	 * Show employees table values
 	 * 
 	 * @throws SQLException
 	 * @throws Exception
@@ -205,7 +207,7 @@ public class UsingJDBC {
 	}
 
 	/**
-	 * Creates instance of the class
+	 * Creates instance of the class and calls its methods
 	 * 
 	 * @param args
 	 */
