@@ -1,4 +1,4 @@
-package com.axway.academy.loren;
+package com.axway.academy.loren.linuxCLI;
 
 import java.io.IOException;
 import java.util.Properties;
@@ -7,13 +7,16 @@ import java.util.jar.JarFile;
 import java.util.jar.Manifest;
 
 /**
- * 
+ * Prints system properties and reads manifest file
  *
  * @author LorenIvanov
  */
 public class LinuxCLIForJavaDevelopmentJHomework {
 
-	public LinuxCLIForJavaDevelopmentJHomework() {
+	/**
+	 * Calls two methods
+	 */
+	protected void execute() {
 		printProperties();
 		readManifestFile();
 	}
@@ -21,7 +24,7 @@ public class LinuxCLIForJavaDevelopmentJHomework {
 	/**
 	 * Read information from manifest file
 	 */
-	private void readManifestFile() {
+	protected void readManifestFile() {
 		Manifest m;
 		Scanner userInput = new Scanner(System.in);
 		System.out.println("Please enter jar locaion.");
@@ -38,17 +41,20 @@ public class LinuxCLIForJavaDevelopmentJHomework {
 	/**
 	 * Prints system properties
 	 */
-	private void printProperties() {
+	protected void printProperties() {
 		Properties props = System.getProperties();
 		props.list(System.out);
 	}
 
 	/**
+	 * Creates LinuxCLIForJavaDevelopmentJHomework object and call its execute
+	 * method
 	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		new LinuxCLIForJavaDevelopmentJHomework();
+		LinuxCLIForJavaDevelopmentJHomework obj = new LinuxCLIForJavaDevelopmentJHomework();
+		obj.execute();
 	}
 
 }

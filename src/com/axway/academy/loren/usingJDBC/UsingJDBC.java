@@ -1,4 +1,4 @@
-package com.axway.academy.loren;
+package com.axway.academy.loren.usingJDBC;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -121,7 +121,7 @@ public class UsingJDBC {
 	/**
 	 * Creates string (yyyy-mm-dd)
 	 * 
-	 * @return
+	 * @return created string
 	 */
 	private String dateOfBirth() {
 		String birthdate = "";
@@ -143,7 +143,7 @@ public class UsingJDBC {
 	/**
 	 * Validates that user enters an integer
 	 * 
-	 * @return
+	 * @return user validated inputF
 	 */
 	private int validateUserInput() {
 		int userChoise = 0;
